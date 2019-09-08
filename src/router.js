@@ -1,20 +1,36 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// Layouts
+import DefaultLayout from '@/layouts/DefaultLayout.vue'
 // Imports
-import { Dashboard } from '@/pages'
+import { Home, Dashboard } from '@/pages'
  
 Vue.use(VueRouter)
 
 
-const router = new VueRouter({
+export default new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'dashboard',
-      component: Dashboard
-    }
+      name: 'home',
+      component: DefaultLayout,
+      children: [
+        {
+          path: '/',
+          name: 'home',
+          meta: {layout: 'default'},
+          component: Home
+        },
+        {
+          path: '/dashboard',
+          name: 'dashboard',
+          meta: {layout: 'default'},
+          component: Dashboard
+        }
+      ]
+    },
+    
   ]
 });
-
-export default router;
