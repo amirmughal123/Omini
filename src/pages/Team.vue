@@ -31,10 +31,10 @@
       return {
         team: [
           { name: 'The Net Ninja', role: 'Influencer', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', },
-          { name: 'Ryu', role: 'Facilitator', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', },
+          { name: 'Ryu', role: 'Facilitator', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg', },
           { name: 'Chun Li', role: 'Organizer', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', },
           { name: 'Gouken', role: 'Ditto', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg', },
-          { name: 'Yoshi', role: 'Facilitator', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',}
+          { name: 'Yoshi', role: 'Facilitator', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg',}
         ]
       }
     }
