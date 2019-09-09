@@ -4,7 +4,7 @@
       v-model="drawer"
       app
     >
-      <v-list dense>
+      <v-list dense link>
         <div class="text-center">
           <v-avatar :size="80">
             <img src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" alt="avatar">
@@ -17,12 +17,12 @@
             </div>
           </v-col>
         </v-row>
-        <v-list-item>
+        <v-list-item @click="navigation('/')">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Messages</v-list-item-title>
+            <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item>
@@ -33,7 +33,7 @@
             <v-list-item-title>Profile</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item>
+        <v-list-item @click="navigation('/dashboard')">
           <v-list-item-action>
             <v-icon>mdi-widgets</v-icon>
           </v-list-item-action>
@@ -41,7 +41,7 @@
             <v-list-item-title>Dashboard</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item>
+        <v-list-item @click="navigation('/my-projects')">
           <v-list-item-action>
             <v-icon>mdi-folder</v-icon>
           </v-list-item-action>
@@ -49,15 +49,15 @@
             <v-list-item-title>My Projects</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item @click="navigation('/team')">
+          <v-list-item-action>
+            <v-icon>mdi-account</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Team</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
-      <v-list-item>
-        <v-list-item-action>
-          <v-icon>mdi-account</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
-          <v-list-item-title>Team</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
     </v-navigation-drawer>
 
     <v-app-bar
@@ -95,5 +95,10 @@
     data: () => ({
       drawer: null,
     }),
+    methods: {
+      navigation (type) {
+        this.$router.push(type);
+      }
+    }
   }
 </script>

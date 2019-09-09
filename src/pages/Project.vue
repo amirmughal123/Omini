@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h3 class="subheading grey--text">Dashboard</h3>
+    <h3 class="subheading grey--text">My Projects</h3>
     <v-container class="my-5">
       <v-layout row class="mb-3" style="margin-left: -4px">
         <v-tooltip bottom>
