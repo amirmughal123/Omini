@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="6">
-        <v-card flat tile>
+        <v-card>
           <v-row class="d-flex justify-center">X Amount of Followers</v-row>
           <v-row>
             <v-col class="d-flex justify-left" style="margin-left: 10%">Consumer</v-col>
@@ -31,7 +31,7 @@
         </v-card>
       </v-col>
       <v-col cols="6">
-        <v-card flat tile>
+        <v-card>
           <v-row class="d-flex justify-center">X Amount Following</v-row>
            <v-row>
             <v-col class="d-flex justify-left" style="margin-left: 10%">Consumer</v-col>
@@ -62,7 +62,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-card flat tile>
+        <v-card>
           <v-row class="d-flex justify-center">Recent Posts & Mentions</v-row>
           <v-list style="margin-left: 3%">
             <v-list-item
