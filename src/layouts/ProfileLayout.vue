@@ -9,6 +9,9 @@
           class="grey lighten-2"
           max-height="300"
         >
+          <v-row @click="navigation('/')">
+            <v-icon style="color: white;margin-left: 2%; font-size: 30px">mdi-arrow-left</v-icon>
+          </v-row>
           <v-row class="profile-row d-flex align-center">
             <v-avatar :size="80">
               <img src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" alt="avatar">
