@@ -25,7 +25,7 @@
           <v-toolbar-items>
             <v-btn text @click="navigation('/profile')">Overview</v-btn>
             <v-btn text @click="navigation('/portfolio')">Portfolio</v-btn>
-            <v-btn text>Community Engagement</v-btn>
+            <v-btn text @click="navigation('/community')">Community Engagement</v-btn>
           </v-toolbar-items>
 
           <div class="flex-grow-1"></div>

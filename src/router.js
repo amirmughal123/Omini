@@ -6,7 +6,7 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import ProfileLayout from '@/layouts/ProfileLayout.vue';
 // Imports
 import { Home, Dashboard, Team, Project, Profile } from '@/pages'
-import { Portfolio } from '@/components/Profile'
+import { Portfolio, Community } from '@/components/Profile'
  
 Vue.use(VueRouter)
 
@@ -61,6 +61,12 @@ export default new VueRouter({
           name: 'portfolio',
           meta: { layout: 'default' },
           component: Portfolio
+        },
+        {
+          path: '/community',
+          name: 'community',
+          meta: { layout: 'default' },
+          component: Community
         }
       ]
     }
