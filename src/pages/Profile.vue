@@ -16,6 +16,7 @@
         >
           <v-card-text>Skiils</v-card-text>
           <v-card-text>Attributes</v-card-text>
+          <RadarChart />
         </v-card>
       </v-col>
       <v-col>
@@ -46,7 +47,11 @@
 </template>
 
 <script>
+import RadarChart from '../components/Chart.vue'
 export default {
+  components: {
+    RadarChart
+  },
   data() {
     return {
       rating: 3,
