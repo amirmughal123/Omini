@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import ProfileLayout from '@/layouts/ProfileLayout.vue';
 // Imports
-import { Home, Dashboard, Team, Project, Profile } from '@/pages'
+import { Home, Dashboard, Project, Profile, Analytics } from '@/pages'
 import { Portfolio, Community } from '@/components/Profile'
  
 Vue.use(VueRouter)
@@ -32,16 +32,16 @@ export default new VueRouter({
           component: Dashboard
         },
         {
-          path: '/team',
-          name: 'team',
-          meta: { layout: 'default' },
-          component: Team
-        },
-        {
           path: '/my-projects',
           name: 'projects',
           meta: { layout: 'default' },
           component: Project
+        },
+        {
+          path: '/analytics',
+          name: 'analytics',
+          meta: { layout: 'default' },
+          component: Analytics
         }
       ]
     },
