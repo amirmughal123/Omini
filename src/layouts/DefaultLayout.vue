@@ -33,12 +33,12 @@
             <v-list-item-title>Profile</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item @click="navigation('/dashboard')">
+        <v-list-item @click="navigation('/ominios')">
           <v-list-item-action>
             <v-icon>mdi-widgets</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Dashboard</v-list-item-title>
+            <v-list-item-title>Ominios</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item @click="navigation('/my-projects')">

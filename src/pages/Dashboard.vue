@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h3 class="subheading grey--text">Dashboard</h3>
+    <h3 class="subheading grey--text">Ominios</h3>
     <v-container class="my-5">
       <v-layout row class="mb-3" style="margin-left: -4px">
         <v-tooltip bottom>
@@ -43,11 +43,16 @@
         <v-divider></v-divider>
       </v-card>
     </v-container>
+    <Team />
   </div>
 </template>
 
 <script>
+  import Team from './Team.vue'
   export default {
+    components: {
+      Team
+    },
     data() {
         return {
           projects: [

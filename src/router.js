@@ -26,7 +26,7 @@ export default new VueRouter({
           component: Home
         },
         {
-          path: '/dashboard',
+          path: '/ominios',
           name: 'dashboard',
           meta: { layout: 'default' },
           component: Dashboard
