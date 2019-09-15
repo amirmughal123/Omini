@@ -49,14 +49,6 @@
             <v-list-item-title>My Projects</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item @click="navigation('/recruitment')">
-          <v-list-item-action>
-            <v-icon>mdi-folder</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Recruitment</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -70,8 +62,8 @@
       <v-toolbar-title>ominiOS</v-toolbar-title>
       <div class="d-flex justify-end" style="width: 50%">
         <v-toolbar-items class="pa-12">
-          <v-btn text>Home</v-btn>
-          <v-btn text>Discovery</v-btn>
+          <v-btn text @click="navigation('/')">Home</v-btn>
+          <v-btn text @click="navigation('/recruitment')">Discovery</v-btn>
         </v-toolbar-items>
       </div>
     </v-app-bar>
