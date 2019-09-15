@@ -49,12 +49,12 @@
             <v-list-item-title>My Projects</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item @click="navigation('/analytics')">
+        <v-list-item @click="navigation('/recruitment')">
           <v-list-item-action>
-            <v-icon>mdi-graph</v-icon>
+            <v-icon>mdi-folder</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Analytics</v-list-item-title>
+            <v-list-item-title>Recruitment</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

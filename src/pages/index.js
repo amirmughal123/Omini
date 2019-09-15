@@ -4,6 +4,7 @@ import Team from './Team.vue';
 import Project from './Project.vue';
 import Profile from './Profile.vue';
 import Analytics from './Analytics.vue';
+import Recruitment from './Recruitment.vue';
 
 export {
   Home,
@@ -11,5 +12,6 @@ export {
   Team,
   Project,
   Profile,
-  Analytics
+  Analytics,
+  Recruitment
 }

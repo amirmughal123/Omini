@@ -1,8 +1,8 @@
 <template>
-  <div class="dashboard">
+  <v-container>
     <h3 class="subheading grey--text">My Projects</h3>
-    <v-container class="my-5">
-      <v-layout row class="mb-3" style="margin-left: -4px">
+    <div class="my-5">
+      <v-layout row class="mb-3" style="margin-left: 0px">
         <v-tooltip bottom>
           <v-btn small flat color="grey" @click="sortBy('title')" slot="activator">
             <v-icon left small>mdi-folder</v-icon>
@@ -18,7 +18,7 @@
           <span>Sort project by person</span>
         </v-tooltip>
       </v-layout>
-      <v-card flat  v-for="project in projects" :key="project.title">
+      <v-card flat  v-for="project in projects" :key="project.title" style="margin-left: 5px">
         <v-layout row wrap :class ="`pa-3 project ${project.status}`">
           <v-flex xs12 md6>
             <div class="caption grey--text">Project title</div>
@@ -42,8 +42,8 @@
         </v-layout>
         <v-divider></v-divider>
       </v-card>
-    </v-container>
-  </div>
+    </div>
+  </v-container>
 </template>
 
 <script>

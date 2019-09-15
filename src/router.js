@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import ProfileLayout from '@/layouts/ProfileLayout.vue';
 // Imports
-import { Home, Dashboard, Project, Profile, Analytics } from '@/pages'
+import { Home, Dashboard, Project, Profile, Recruitment } from '@/pages'
 import { Portfolio, Community } from '@/components/Profile'
  
 Vue.use(VueRouter)
@@ -38,10 +38,10 @@ export default new VueRouter({
           component: Project
         },
         {
-          path: '/analytics',
-          name: 'analytics',
+          path: '/recruitment',
+          name: 'recruitment',
           meta: { layout: 'default' },
-          component: Analytics
+          component: Recruitment
         }
       ]
     },

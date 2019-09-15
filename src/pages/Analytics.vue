@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div>
     <h3 class="subheading grey--text">Analytics-Finances</h3>
     <v-card
       class="mx-auto text-center my-2"
@@ -200,7 +200,7 @@
         </v-tab-item>
       </v-tabs-items>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>

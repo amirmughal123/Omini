@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="6">
         <v-card>
-          <v-row class="d-flex justify-center">X Amount of Followers</v-row>
+          <v-card-text class="d-flex justify-center"><h3>X Amount of Followers</h3></v-card-text>
           <v-row>
             <v-col class="d-flex justify-left" style="margin-left: 10%">Consumer</v-col>
             <v-col class="d-flex justify-center">Consumer Name</v-col>
@@ -32,7 +32,7 @@
       </v-col>
       <v-col cols="6">
         <v-card>
-          <v-row class="d-flex justify-center">X Amount Following</v-row>
+          <v-card-text class="d-flex justify-center"><h3>X Amount Following</h3></v-card-text>
            <v-row>
             <v-col class="d-flex justify-left" style="margin-left: 10%">Consumer</v-col>
             <v-col class="d-flex justify-center">Consumer Name</v-col>
@@ -63,7 +63,7 @@
     <v-row>
       <v-col cols="12">
         <v-card>
-          <v-row class="d-flex justify-center">Recent Posts & Mentions</v-row>
+          <v-card-text class="d-flex justify-center"><h3>Recent Posts & Mentions</h3></v-card-text>
           <v-list style="margin-left: 3%">
             <v-list-item
               v-for="item in items"

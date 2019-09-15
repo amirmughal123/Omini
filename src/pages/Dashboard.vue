@@ -1,8 +1,8 @@
 <template>
-  <div class="dashboard">
+  <v-container>
     <h3 class="subheading grey--text">Ominios</h3>
-    <v-container class="my-5">
-      <v-layout row class="mb-3" style="margin-left: -4px">
+    <div class="my-5" style="margin-left: 5px">
+      <v-layout row class="mb-4" style="margin-left: -5px">
         <v-tooltip bottom>
           <v-btn small flat color="grey" @click="sortBy('title')" slot="activator">
             <v-icon left small>mdi-folder</v-icon>
@@ -42,16 +42,19 @@
         </v-layout>
         <v-divider></v-divider>
       </v-card>
-    </v-container>
+    </div>
     <Team />
-  </div>
+    <Analytics />
+  </v-container>
 </template>
 
 <script>
-  import Team from './Team.vue'
+  import Team from './Team.vue';
+  import Analytics from './Analytics.vue';
   export default {
     components: {
-      Team
+      Team,
+      Analytics
     },
     data() {
         return {

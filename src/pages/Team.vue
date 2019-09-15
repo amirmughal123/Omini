@@ -1,9 +1,9 @@
 <template>
-  <div class="team">
+  <div>
     <h3 class="subheading grey--text">Team</h3>
-    <v-container class="my-5" style="padding: 8px">
+    <v-container class="my-5" style="padding: 0px">
       <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg3 v-for="person in team" :key="person.name">
+        <v-flex xs12 sm9 md4 lg3 v-for="person in team" :key="person.name">
           <v-card flat class="text-xs-center ma-4">
             <div class="text-center pa-md-4 mx-lg-auto">
               <v-avatar :size="100">
